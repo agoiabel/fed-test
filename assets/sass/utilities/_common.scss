@@ -1,0 +1,41 @@
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+body,
+html {
+  font-size: var(--text-size-1);
+  font-family: $body-font;
+  color: $fed-text-color;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+}
+.container {
+  width: 86%;
+  @include push--auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @include screen('tablet') {}
+  @include screen('desktop') {
+    flex-direction: row;
+  }
+
+  @include screen('desktop') {
+    flex-direction: row;
+  }
+}
+
+a {
+  color: $fed-red-100;
+  text-decoration: none;
+}

@@ -1,0 +1,29 @@
+//https://www.madebymike.com.au/writing/using-css-variables
+
+:root {
+  --text-size-1: 14px;
+
+  --head-size-1: 35px;
+  --head-size-2: 19px;
+  --head-size-3: 18px;
+  --head-size-4: 17px;
+
+  @include screen('tablet') {
+    --head-size-1: 60px;
+    --head-size-2: 35px;
+    --head-size-3: 21px;
+    --head-size-4: 18px;
+  }
+  
+  @include screen('desktop') {
+    --head-size-1: 70px;
+    --head-size-2: 35px;
+    --head-size-3: 28px;
+    --head-size-4: 24px;
+  }
+}
+
+//usage
+// h1 {
+//   font-size: var(--font-size-6);
+// }

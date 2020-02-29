@@ -1,0 +1,168 @@
+.sponsor {
+    width: 100%;
+    text-align: center;
+    background-color: $fed-tan-200;
+    @include padding(5px, null, 5px, null);
+}
+
+.header {
+    background-color: $fed-text-color;
+
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 90%;
+        @include padding(20px, null, 20px, null);
+    }
+
+    .header__logo {
+        img {
+            width: 65px;
+        }
+    }
+    .header__sponsor {
+        color: $fed-tan-200;
+        text-transform: uppercase;
+
+        border: 2px solid $fed-tan-200;
+        @include padding(10px, 30px, 10px, 30px);
+    }
+    .header__social {
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            li {
+                margin-left: 10px;
+            }
+        }
+        .fab {
+            color: $fed-tan-200;
+            font-size: 25px;
+        }
+    }
+}
+
+
+.hero {
+    background-color: $fed-tan-200;
+    padding-bottom: 0 !important;
+
+    .wrapper {        
+        background: url('../img/www.knobcreek.com-1293609732325191-768x480.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        
+        color: $fed-white;
+        text-align: center;
+
+    }
+
+    .flex-container {
+        @include padding(40px, null, 40px, null);
+        @include screen('desktop') {
+            @include padding(70px, null, 70px, null);
+        }
+    }
+
+    .copy {
+        width: 90%;
+        @include push--auto;  
+        margin-bottom: 10px;
+        h1 {
+            font-size: var(--head-size-1);
+            @include margin(null, null, 10px, null);
+        }
+
+        p {
+            line-height: 24px;
+            @include screen('tablet') {
+                opacity: 0;
+                animation: slideIn2 400ms ease-in-out 700ms;
+                animation-fill-mode: forwards;    
+            }
+            @include screen('desktop') {
+                width: 75%;
+            }
+        }
+
+        @include screen('tablet') {
+            width: 70%;
+            @include push--auto;    
+
+            opacity: 0;
+            animation: slideIn 400ms ease-in-out 400ms;
+            animation-fill-mode: forwards;
+        }
+        @include screen('desktop') {
+            width: 40%;
+            text-align: left;
+            margin: 0 5% 10px 10%;
+        }
+        @include screen('(min-width: 1367px)') {
+            width: 35%;
+            margin-top: 45px;
+            margin-right: 15%;
+        }
+    }
+
+    .img  {
+        img {
+            width: 191px;
+            height: 300px;
+        }
+        
+        @include screen('desktop') {
+            img {
+                width: 250px;
+                height: 400px;
+            }
+        }
+        @include screen('tablet') {
+            opacity: 0;
+            animation: banner 400ms ease-in-out 800ms;
+            animation-fill-mode: forwards;    
+        }
+    }
+
+    .article {
+
+        width: 86%;
+        @include push--auto;    
+        // margin-top: -70px;
+        position: relative;
+        top: -120px;
+
+        @include screen('tablet') {
+            opacity: 0;
+            animation: slideIn2 400ms ease-in-out 1100ms;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+.related_articles {
+    .related_articles--header {
+        font-size: 18px;
+        color: #000000;
+        line-height: 65px;
+        text-align: center;
+        @include margin(30px, 30px, 30px, 30px);
+    }
+
+    .articles {
+        @include screen('tablet') {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            flex-wrap: wrap;
+        }
+    }
+}

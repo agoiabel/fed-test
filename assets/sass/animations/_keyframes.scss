@@ -1,0 +1,54 @@
+@keyframes bounce {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes scroll {
+  50% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 125% 0;
+  }
+}
+
+// Banner animations
+@keyframes slideIn {
+  // animation for Banner Heading
+  from {
+    margin-top: 70px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn2 {
+  // animation for Banner Caption 
+  from {
+    margin-top: 50px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 40px;
+    opacity: 1;
+  }
+}
+
+@keyframes banner {
+  // animation for Banner image
+  from {
+    margin-right: -30px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
